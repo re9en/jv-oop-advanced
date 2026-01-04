@@ -17,10 +17,10 @@ public class Square extends Figure {
     @Override
     public void draw() {
         System.out.println("Figure: Square, area: "
-                + getArea()
-                + "units, side: "
+                + String.format("%.2f", getArea())
+                + " units, side: "
                 + side
-                + "Color: "
+                + " Color: "
                 + color);
     }
 }
