@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class RightTriangle extends Figure {
-    private int firstLeg;
-    private int secondLeg;
+    private final int firstLeg;
+    private final int secondLeg;
 
     public RightTriangle(int firstLeg, int secondLeg, String color) {
         this.firstLeg = firstLeg;
@@ -12,18 +12,18 @@ public class RightTriangle extends Figure {
 
     @Override
     public double getArea() {
-        return firstLeg * secondLeg * 0.5;
+        return (firstLeg * secondLeg) / 2;
     }
 
     @Override
     public void draw() {
         System.out.println("Figure: RightTriangle, area: "
-                + getArea()
-                + "units, firstLeg: "
+                + String.format("%.2f", getArea())
+                + " sq. units, firstLeg: "
                 + firstLeg
-                + "secondLeg: "
+                + " secondLeg: "
                 + secondLeg
-                + "Color: "
+                + " color: "
                 + color);
     }
 }
