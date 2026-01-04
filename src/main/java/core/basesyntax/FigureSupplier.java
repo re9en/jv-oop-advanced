@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class FigureSupplier {
 
-    static final int MIN_SIZE = 1;
-    static final int MAX_SIZE = 100;
-    static final double DEFAULT_RADIUS = 10;
-    static final int FIGURE_COUNT = 5;
+    public static final int MIN_SIZE = 1;
+    public static final int MAX_SIZE = 100;
+    public static final double DEFAULT_RADIUS = 10;
+    public static final int FIGURE_COUNT = 5;
 
     private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
