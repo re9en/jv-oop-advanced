@@ -21,9 +21,9 @@ public class Rectangle extends Figure {
                 + String.format("%.2f", getArea())
                 + " sq. units, base: "
                 + base
-                + " height: "
+                + " units, height: "
                 + height
-                + " color: "
+                + " units, color: "
                 + color);
     }
 }

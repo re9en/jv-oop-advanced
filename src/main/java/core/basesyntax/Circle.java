@@ -19,7 +19,7 @@ public class Circle extends Figure {
                 + String.format("%.2f", getArea())
                 + " sq. units, radius: "
                 + radius
-                + " color: "
+                + " units, color: "
                 + color);
     }
 }
