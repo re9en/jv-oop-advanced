@@ -1,10 +1,10 @@
 package core.basesyntax;
 
 public class Rectangle extends Figure {
-    private int height;
-    private int base;
+    private double height;
+    private double base;
 
-    public Rectangle(int base, int height, String color) {
+    public Rectangle(double base, double height, String color) {
         this.base = base;
         this.height = height;
         this.color = color;
@@ -17,7 +17,7 @@ public class Rectangle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println("Figure: Rectangle, area: "
+        System.out.println("Figure: rectangle, area: "
                 + String.format("%.2f", getArea())
                 + " sq. units, base: "
                 + base

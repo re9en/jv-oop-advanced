@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ColorSupplier {
     public String getRandomColor() {
-        Random random = new Random();
+        final Random random = new Random();
 
         ColorEnum[] values = ColorEnum.values();
         ColorEnum randomColor = values[random.nextInt(values.length)];

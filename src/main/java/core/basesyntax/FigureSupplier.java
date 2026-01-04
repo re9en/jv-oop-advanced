@@ -4,20 +4,20 @@ import java.util.Random;
 
 public class FigureSupplier {
 
-    static final int Min_Size = 1;
-    static final int Max_Size = 100;
-    static final double Default_Radius = 10;
-    static final int Figure_Count = 5;
+    static final int MIN_SIZE = 1;
+    static final int MAX_SIZE = 100;
+    static final double DEFAULT_RADIUS = 10;
+    static final int FIGURE_COUNT = 5;
 
     private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
 
     private int randomSize() {
-        return random.nextInt(Max_Size - Min_Size + 1) + Min_Size;
+        return random.nextInt(MAX_SIZE - MIN_SIZE + 1) + MIN_SIZE;
     }
 
     public Figure getRandomFigure() {
-        int index = random.nextInt(Figure_Count);
+        int index = random.nextInt(FIGURE_COUNT);
         switch (index) {
             case 0:
                 return new Circle(randomSize(),
@@ -44,6 +44,6 @@ public class FigureSupplier {
     }
 
     public Figure getDefaultFigure() {
-        return new Circle(Default_Radius, ColorEnum.WHITE.name());
+        return new Circle(DEFAULT_RADIUS, ColorEnum.WHITE.name());
     }
 }
