@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Rectangle extends Figure implements AreaCalculator {
+public class Rectangle extends Figure {
     private int height;
     private int base;
 
@@ -12,18 +12,18 @@ public class Rectangle extends Figure implements AreaCalculator {
 
     @Override
     public double getArea() {
-        return height * base * 0.5;
+        return height * base;
     }
 
     @Override
-    public String draw() {
-        return "Figure: Rectangle, area: "
+    public void draw() {
+        System.out.println("Figure: Rectangle, area: "
                 + getArea()
                 + "units, base: "
                 + base
                 + "height: "
                 + height
                 + "Color: "
-                + color;
+                + color);
     }
 }
